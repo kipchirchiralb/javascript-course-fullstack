@@ -1,7 +1,6 @@
 # JavaScript Array and String Methods: Notes and Use Cases
 
 These notes build on your prior lessons covering **data types**, **operators**, and **control flow** in JavaScript. Today’s focus is on **Array** and **String** methods, which are essential for manipulating data in JavaScript. Below, we’ll explore commonly used methods, their use cases, and practical examples to solidify your understanding.
-
 Before diving into array and string methods, let’s explore **callbacks** and **arrow functions**, as they are used in several examples in this lesson. These concepts are critical for working with array methods like `map()` and `filter()`, which rely on functions passed as arguments.
 
 ## Understanding Callbacks
@@ -63,9 +62,7 @@ const evens = numbers.filter((num) => num % 2 === 0); // Callback is an arrow fu
 console.log(evens); // [2, 4]
 ```
 
-These notes build on our prior lessons covering **data types**, **operators**, and **control flow** in JavaScript. Now, let’s explore **Array** and **String** methods, which are essential for manipulating data efficiently.
-
----
+## Now, let’s explore **Array** and **String** methods, which are essential for manipulating data efficiently.
 
 ## 1. Array Methods
 
