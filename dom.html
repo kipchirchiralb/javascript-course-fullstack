@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1>The Document Object Model - Hello</h1>
+
+    <p>
+      The DOM converts a html document into a javascript object. Every html
+      element is also an object.
+    </p>
+
+    <script>
+      // get the paragraph element
+      const myH = document.querySelector("h1");
+
+      myH.innerHTML = "<span>New <strong>Title</strong></span>";
+      myH.style.color = "red";
+      myH.classList.add("heading");
+      myH.classList.add("bright");
+
+      myH.setAttribute("href", "main-h");
+
+      console.log(myH.textContent);
+
+      const newAcnhorLink = document.createElement("a");
+      newAcnhorLink.href = "https://www.google.com";
+      newAcnhorLink.textContent = "Google";
+      newAcnhorLink.setAttribute("target", "_blank");
+
+      console.log(newAcnhorLink);
+
+      document.body.appendChild(newAcnhorLink);
+    </script>
+  </body>
+</html>

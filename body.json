@@ -1,0 +1,9 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Analyze the uploaded medical scan (which may be a CT, MRI, X-ray, Ultrasound, or PET image). Identify any possible abnormalities, injuries, or conditions present in the image. Respond strictly in the following JSON format and do not include any text outside of it: {\"result\": \"short summary of the suspected diagnosis\", \"detailed\": \"detailed explanation of the findings in the scan\", \"accuracy\": numerical accuracy estimate from 0 to 100, \"riskFactors\": [\"risk factor 1\", \"risk factor 2\"], \"recommendations\": [\"medical advice or next steps\"]}",
+      "img_url": "https://kesoru.org/images/abdomen.jpg"
+    }
+  ]
+}

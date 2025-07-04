@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile menu btn</title>
+    <style>
+      .mobile-nav {
+        position: fixed;
+        inset: 0;
+        background-color: aquamarine;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+      body {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="">Logo</a>
+      <button id="open-menu">menu</button>
+
+      <nav class="mobile-nav hidden">
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="">Blog</a>
+
+        <button id="close-menu">Close Menu</button>
+      </nav>
+    </header>
+    <script>
+      const openMenuButton = document.getElementById("open-menu");
+      const closeMenuButton = document.getElementById("close-menu");
+
+      console.log(openMenuButton);
+
+      openMenuButton.addEventListener("click", (e) => {
+        document.querySelector("nav").classList.remove("hidden");
+      });
+
+      closeMenuButton.addEventListener("click", (e) => {
+        document.querySelector("nav").classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
